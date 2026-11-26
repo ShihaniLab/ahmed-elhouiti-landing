@@ -267,6 +267,16 @@ footer .disc{font-size:12px;border-top:1px solid var(--line);padding-top:18px;ma
 .to-top svg{width:20px;height:20px}.to-top.on{opacity:1;transform:none;pointer-events:auto}
 @media (max-width:860px){.ft-top{grid-template-columns:1fr 1fr}.ft-brand{grid-column:span 2}footer.ft{padding-bottom:100px}}
 @media (prefers-reduced-motion:reduce){.wa-float,.wa-float:before{animation:none}}
+
+/* desktop hero: photo left, copy right */
+@media (min-width:861px){
+ .hero{min-height:92vh}
+ .hero .bgimg{inset:0 auto 0 0;width:56%}
+ .hero .bgimg img{object-position:50% 18%}
+ .hero:after{background:linear-gradient(270deg,#0f2620 44%,#0f2620d9 52%,transparent 72%),linear-gradient(to top,#0f2620 0,transparent 28%)}
+ .hero .copy{max-width:600px}
+ .hero .stats{max-width:640px;margin-right:0}
+}
 </style>
 </head>
 <body>
